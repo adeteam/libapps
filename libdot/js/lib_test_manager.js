@@ -79,7 +79,7 @@ lib.TestManager.prototype.testPostamble = function(result, cx) {};
  * @param {Object} opt_console The console object to route all logging through.
  *     Should provide saome API as the standard console API.
  */
-lib.TestManager.Log = function(opt_console=console) {
+lib.TestManager.Log = function(opt_console) {
   this.save = false;
   this.data = '';
   this.prefix_ = '';
@@ -88,7 +88,7 @@ lib.TestManager.Log = function(opt_console=console) {
   // Capture all the console entry points in case code at runtime calls these
   // directly.  We want to be able to still see things.
   // We also expose the direct API to our callers (e.g. we provide warn()).
-  this.console_ = opt_console;
+  this.console_ = opt_console||console;
   ['log', 'debug', 'info', 'warn', 'error'].forEach((level) => {
     let msgPrefix = '';
     switch (level) {

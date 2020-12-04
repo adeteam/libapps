@@ -1,6 +1,6 @@
 {
   "name": "@adeteam/libapps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Grab bag of js, including hterm and its support library.",
   "main": "libdot/js/lib.js",
   "repository": {

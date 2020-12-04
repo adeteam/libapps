@@ -1,5 +1,5 @@
 {
-  "name": "libapps",
+  "name": "@adeteam/libapps",
   "version": "1.0.0",
   "description": "Grab bag of js, including hterm and its support library.",
   "main": "libdot/js/lib.js",
@@ -18,5 +18,11 @@
     "url": "https://crbug.com/new",
     "email": "chromium-hterm@chromium.org"
   },
-  "homepage": "https://chromium.googlesource.com/apps/libapps"
+  "homepage": "https://chromium.googlesource.com/apps/libapps",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "libapps"
+  ]
 }
